@@ -18,6 +18,11 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
+import org.swrlapi.factory.SWRLAPIFactory;
+import org.swrlapi.parser.SWRLParseException;
+import org.swrlapi.sqwrl.SQWRLQueryEngine;
+import org.swrlapi.sqwrl.SQWRLResult;
+import org.swrlapi.sqwrl.exceptions.SQWRLException;
 
 public class OntologyCreator {
 	
@@ -91,6 +96,19 @@ public class OntologyCreator {
 		
 		System.out.println("Done");
 	}
+	
+	void queryOntology(String filePath) throws FileNotFoundException, OWLOntologyCreationException, SQWRLException, SWRLParseException {
+		InputStream inputStream = new FileInputStream(new File(filePath));
+		OWLOntologyManager ontologyManager = OWLManager.createOWLOntologyManager();
+		OWLOntology slTravelOntology = ontologyManager.loadOntologyFromOntologyDocument(inputStream);
+		SQWRLQueryEngine sqwrlQueryEngine = SWRLAPIFactory.createSQWRLQueryEngine(slTravelOntology);
+		
+		SQWRLResult result1 = sqwrlQueryEngine.runSQWRLQuery("q1","tbox:cd(?c) -> sqwrl:select(?c)");
+		System.out.println(result1);
+		
+	}
+	
+	
 	
     private static OWLNamedIndividual createIndividual(OWLOntology ontology, DefaultPrefixManager pm, OWLOntologyManager manager, String name) {
         OWLDataFactory factory = manager.getOWLDataFactory();
