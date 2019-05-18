@@ -1,0 +1,1614 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://travel.org/ontologies/sl_travel"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://travel.org/ontologies/sl_travel">
+    <Prefix name="" IRI="http://travel.org/ontologies/sl_travel#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accomadation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Casino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamilyTrip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memorial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reservoir"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RomanticTrip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Santuary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoloTrip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Travelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TripWithFriends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zoo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DestinationAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#StayAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TravelUsing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AccomadationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DistanceFromCapital"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocationType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NoOfPeople"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NoOfRooms"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PlaceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TravellingModeName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TripName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TripType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ananthaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beira_Lake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camping_Trip_to_Kumana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Camping_Trip_to_Yala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Casino_Marina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExpressTrain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grand_Kandian_Hotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hilton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IntercityBus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IntercityTrain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jetwing_Light_House"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kandalama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kangaroo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatharaBeach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NegomboBeach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NormalBus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NormalTrain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pickme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomanticTripToGalle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomanticTripToKandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemiLuxuryBus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoloTripToGalle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoloTripToKandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TripWithFriendsToGalle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TripWithFriendsToKandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Travelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cab"/>
+        <Class IRI="#Travelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camping"/>
+        <Class IRI="#Accomadation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Casino"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FamilyTrip"/>
+        <Class IRI="#Trip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Accomadation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memorial"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousPlace"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reservoir"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestHouse"/>
+        <Class IRI="#Accomadation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RomanticTrip"/>
+        <Class IRI="#Trip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Santuary"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoloTrip"/>
+        <Class IRI="#Trip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#Travelling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TripWithFriends"/>
+        <Class IRI="#Trip"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zoo"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Cab"/>
+        <Class IRI="#Train"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Casino"/>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Park"/>
+        <Class IRI="#ReligiousPlace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FamilyTrip"/>
+        <Class IRI="#RomanticTrip"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Santuary"/>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Reservoir"/>
+        <NamedIndividual IRI="#Beira_Lake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripWithFriends"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Kumana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripWithFriends"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Yala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casino"/>
+        <NamedIndividual IRI="#Casino_Marina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Zoo"/>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Train"/>
+        <NamedIndividual IRI="#ExpressTrain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FamilyTrip"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FamilyTrip"/>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestHouse"/>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bus"/>
+        <NamedIndividual IRI="#IntercityBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Train"/>
+        <NamedIndividual IRI="#IntercityTrain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Jetwing_Light_House"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestHouse"/>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cab"/>
+        <NamedIndividual IRI="#Kangaroo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Camping"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#MatharaBeach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#NegomboBeach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bus"/>
+        <NamedIndividual IRI="#NormalBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Train"/>
+        <NamedIndividual IRI="#NormalTrain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestHouse"/>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Memorial"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Memorial"/>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cab"/>
+        <NamedIndividual IRI="#Pickme"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RomanticTrip"/>
+        <NamedIndividual IRI="#RomanticTripToGalle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RomanticTrip"/>
+        <NamedIndividual IRI="#RomanticTripToKandy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bus"/>
+        <NamedIndividual IRI="#SemiLuxuryBus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoloTrip"/>
+        <NamedIndividual IRI="#SoloTripToGalle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SoloTrip"/>
+        <NamedIndividual IRI="#SoloTripToKandy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Memorial"/>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripWithFriends"/>
+        <NamedIndividual IRI="#TripWithFriendsToGalle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TripWithFriends"/>
+        <NamedIndividual IRI="#TripWithFriendsToKandy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cab"/>
+        <NamedIndividual IRI="#Uber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Camping"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Casino"/>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReligiousPlace"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#StayAt"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Kumana"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#StayAt"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Yala"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#StayAt"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <NamedIndividual IRI="#Jetwing_Light_House"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TravelUsing"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <NamedIndividual IRI="#ExpressTrain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+        <NamedIndividual IRI="#Grand_Kandian_Hotel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#TravelUsing"/>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+        <NamedIndividual IRI="#IntercityTrain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#RomanticTripToGalle"/>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#SoloTripToGalle"/>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#TripWithFriendsToGalle"/>
+        <NamedIndividual IRI="#GalleBeach"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Ananthaya"/>
+        <Literal>Ananthaya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Ananthaya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Ananthaya"/>
+        <Literal>Chillaw</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Ananthaya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Rating"/>
+        <NamedIndividual IRI="#Ananthaya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+        <Literal>Arugam Bay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+        <Literal>Beach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Arugam_Bay_Beach"/>
+        <Literal>Arugam Bay Beach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+        <Literal>Santuary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Attidiya_Bird_Sanctuary"/>
+        <Literal>Attidiya Bird Sanctuary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+        <Literal>Beddagana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+        <Literal>Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Beddagana_Wetland_Park"/>
+        <Literal>Beddagana Wetland Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Beira_Lake"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Beira_Lake"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Beira_Lake"/>
+        <Literal>Reservior</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Beira_Lake"/>
+        <Literal>Beira Lake</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+        <Literal>Temple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+        <Literal>Bellanwila Rajamaha Viharaya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#Bellanwila_Rajamaha_Viharaya"/>
+        <Literal>Buddihist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Kumana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Kumana"/>
+        <Literal>Camping Trip to Kumana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Yala"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#Camping_Trip_to_Yala"/>
+        <Literal>Camping Trip To Yala</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Casino_Marina"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Casino_Marina"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Casino_Marina"/>
+        <Literal>Casino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Casino_Marina"/>
+        <Literal>Casino Marina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+        <Literal>Museum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Colombo_Dutch_Museum"/>
+        <Literal>Colombo Dutch Museum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+        <Literal>Zoo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Dehiwala_Zoo"/>
+        <Literal>Dehiwala Zoo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+        <Literal>Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Diyatha_Uyana"/>
+        <Literal>Diyatha Uyana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#ExpressTrain"/>
+        <Literal>Express Train</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#FamilyTripToGalle"/>
+        <Literal>Family Trip To Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#FamilyTripToKandy"/>
+        <Literal>Family Trip To Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+        <Literal>Galle Rest House</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+        <Literal>Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#GalleRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+        <Literal>Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Galle_Face_Green"/>
+        <Literal>Galle Face Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+        <Literal>Temple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+        <Literal>Gangaramaya Buddhist Temple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#Gangaramaya_Buddhist_Temple"/>
+        <Literal>Buddihist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Grand_Kandian_Hotel"/>
+        <Literal>Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Grand_Kandian_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Hilton"/>
+        <Literal>Hilton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Hilton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Hilton"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Hilton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">110</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Rating"/>
+        <NamedIndividual IRI="#Hilton"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#IntercityBus"/>
+        <Literal>Intercity Bus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#IntercityTrain"/>
+        <Literal>Intercity Train</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+        <Literal>Mosque</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+        <Literal>Jami Ul-Alfar Mosque</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#Jami_Ul-Alfar_Mosque"/>
+        <Literal>Islam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Jetwing_Light_House"/>
+        <Literal>Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Jetwing_Light_House"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Kandalama"/>
+        <Literal>Kandalama</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Kandalama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Kandalama"/>
+        <Literal>Dambulla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Kandalama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Rating"/>
+        <NamedIndividual IRI="#Kandalama"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+        <Literal>Kandy Rest House</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">110</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+        <Literal>Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#KandyRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#Kangaroo"/>
+        <Literal>Kangaroo Cab Service</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+        <Literal>Kelaniya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+        <Literal>Temple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+        <Literal>Kelaniya Raja Maha Vihara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#Kelaniya_Raja_Maha_Vihara"/>
+        <Literal>Buddhist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+        <Literal>Kumana Camping site</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+        <Literal>Kumana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+        <Literal>Camping Site</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Kumana_Camping_Site"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+        <Literal>Mount Lavinia Hotel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+        <Literal>Mount Lavinia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Rating"/>
+        <NamedIndividual IRI="#Mount_Lavinia_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+        <Literal>Museum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#National_Museum_Of_Colombo"/>
+        <Literal>National Museum Of Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#NormalBus"/>
+        <Literal>Normal Bus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#NormalTrain"/>
+        <Literal>Normal Train</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+        <Literal>Nuwara Eliya Rest House</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+        <Literal>Nuwara Eliya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#NuwaraEliyaRestHouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+        <Literal>Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+        <Literal>Memorial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Old_Dutch_Hospital"/>
+        <Literal>Old Dutch Hospital</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+        <Literal>Memorial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Old_Galle_Buck_Lighthouse"/>
+        <Literal>Old Galle Buck Lighthouse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#Pickme"/>
+        <Literal>Pick me cab service</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#RomanticTripToGalle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#RomanticTripToGalle"/>
+        <Literal>Romantic Trip To Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#RomanticTripToKandy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#RomanticTripToKandy"/>
+        <Literal>Romantic Trip To Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+        <Literal>Temple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+        <Literal>Seema Malaka</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#Seema_Malaka"/>
+        <Literal>Buddihist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#SemiLuxuryBus"/>
+        <Literal>Semi Luxury Bus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#SoloTripToGalle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#SoloTripToGalle"/>
+        <Literal>Solo Trip To Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#SoloTripToKandy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#SoloTripToKandy"/>
+        <Literal>Solo Trip To Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+        <Literal>Memorial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#The_Independence_Square"/>
+        <Literal>The Independence Square</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+        <Literal>Dehiwela</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+        <Literal>Museum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Traditional_Puppet_Art_Museum"/>
+        <Literal>Traditional Puppet Art Museum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#TripWithFriendsToGalle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#TripWithFriendsToGalle"/>
+        <Literal>Trip With Friends To Galle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#TripWithFriendsToKandy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#TripWithFriendsToKandy"/>
+        <Literal>Trip With Friends to Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TravellingModeName"/>
+        <NamedIndividual IRI="#Uber"/>
+        <Literal>Uber cab service</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+        <Literal>Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Viharamahadevi_Park"/>
+        <Literal>Viharamahadevi Park</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#AccomadationName"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+        <Literal>Yala Camping Site</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+        <Literal>Yala</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+        <Literal>Camping</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfRooms"/>
+        <NamedIndividual IRI="#Yala_Camping_Site"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+        <Literal>Casino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#Bally’s_Casino"/>
+        <Literal>Bally’s Casino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+        <Literal>Colombo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationType"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+        <Literal>Church</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PlaceName"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+        <Literal>St. Lucia’s Cathedral</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Religion"/>
+        <NamedIndividual IRI="#St._Lucia’s_Cathedral"/>
+        <Literal>Religion</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#StayAt"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TravelUsing"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <Class IRI="#Trip"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#StayAt"/>
+        <Class IRI="#Trip"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TravelUsing"/>
+        <Class IRI="#Trip"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <Class IRI="#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#StayAt"/>
+        <Class IRI="#Accomadation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TravelUsing"/>
+        <Class IRI="#Travelling"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AccomadationName"/>
+        <Class IRI="#Accomadation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location"/>
+        <Class IRI="#Accomadation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LocationType"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NoOfPeople"/>
+        <Class IRI="#Trip"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NoOfRooms"/>
+        <Class IRI="#RestHouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PlaceName"/>
+        <Class IRI="#Place"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Religion"/>
+        <Class IRI="#ReligiousPlace"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TravellingModeName"/>
+        <Class IRI="#Travelling"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TripName"/>
+        <Class IRI="#Trip"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TripType"/>
+        <Class IRI="#Trip"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AccomadationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DistanceFromCapital"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LocationType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NoOfRooms"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PlaceName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Rating"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TravellingModeName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TripName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TripType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+

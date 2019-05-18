@@ -1,0 +1,1015 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://travel.org/ontologies/sl_travel#"
+     xml:base="http://travel.org/ontologies/sl_travel"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://travel.org/ontologies/sl_travel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#DestinationAt -->
+
+    <owl:ObjectProperty rdf:about="http://travel.org/ontologies/sl_travel#DestinationAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <rdfs:range rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#StayAt -->
+
+    <owl:ObjectProperty rdf:about="http://travel.org/ontologies/sl_travel#StayAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <rdfs:range rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TravelUsing -->
+
+    <owl:ObjectProperty rdf:about="http://travel.org/ontologies/sl_travel#TravelUsing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <rdfs:range rdf:resource="http://travel.org/ontologies/sl_travel#Travelling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#AccomadationName -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#AccomadationName">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#DistanceFromCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#DistanceFromCapital">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Location -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#Location">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#LocationType -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#LocationType">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NoOfPeople -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#NoOfPeople">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NoOfRooms -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#NoOfRooms">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#RestHouse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#PlaceName -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#PlaceName">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Rating -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#Rating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Religion -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#Religion">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TravellingModeName -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#TravellingModeName">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Travelling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TripName -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#TripName">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TripType -->
+
+    <owl:DatatypeProperty rdf:about="http://travel.org/ontologies/sl_travel#TripType">
+        <rdfs:domain rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Accomadation -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Accomadation"/>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Beach -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Beach">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Bus -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Bus">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Travelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Cab -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Cab">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Travelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Camping -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Camping">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Casino -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Casino">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#FamilyTrip -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#FamilyTrip">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+        <owl:disjointWith rdf:resource="http://travel.org/ontologies/sl_travel#RomanticTrip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Hotel -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Hotel">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Memorial -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Memorial">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Museum -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Museum">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Park -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Park">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Place -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Place"/>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#ReligiousPlace -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#ReligiousPlace">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Reservoir -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Reservoir">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#RestHouse -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#RestHouse">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Accomadation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#RomanticTrip -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#RomanticTrip">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Santuary -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Santuary">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#SoloTrip -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#SoloTrip">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Train -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Train">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Travelling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Travelling -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Travelling"/>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Trip -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Trip"/>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TripWithFriends -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#TripWithFriends">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Trip"/>
+    </owl:Class>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Zoo -->
+
+    <owl:Class rdf:about="http://travel.org/ontologies/sl_travel#Zoo">
+        <rdfs:subClassOf rdf:resource="http://travel.org/ontologies/sl_travel#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Ananthaya -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Ananthaya">
+        <AccomadationName>Ananthaya</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</DistanceFromCapital>
+        <Location>Chillaw</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</NoOfRooms>
+        <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Arugam_Bay_Beach -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Arugam_Bay_Beach">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Beach"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</DistanceFromCapital>
+        <Location>Arugam Bay</Location>
+        <LocationType>Beach</LocationType>
+        <PlaceName>Arugam Bay Beach</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Attidiya_Bird_Sanctuary -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Attidiya_Bird_Sanctuary">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Santuary"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Santuary</LocationType>
+        <PlaceName>Attidiya Bird Sanctuary</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Beddagana_Wetland_Park -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Beddagana_Wetland_Park">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Park"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</DistanceFromCapital>
+        <Location>Beddagana</Location>
+        <LocationType>Park</LocationType>
+        <PlaceName>Beddagana Wetland Park</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Beira_Lake -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Beira_Lake">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Reservoir"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Reservior</LocationType>
+        <PlaceName>Beira Lake</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Bellanwila_Rajamaha_Viharaya -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Bellanwila_Rajamaha_Viharaya">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Temple</LocationType>
+        <PlaceName>Bellanwila Rajamaha Viharaya</PlaceName>
+        <Religion>Buddihist</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Camping_Trip_to_Kumana -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Camping_Trip_to_Kumana">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#TripWithFriends"/>
+        <StayAt rdf:resource="http://travel.org/ontologies/sl_travel#Kumana_Camping_Site"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NoOfPeople>
+        <TripName>Camping Trip to Kumana</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Camping_Trip_to_Yala -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Camping_Trip_to_Yala">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#TripWithFriends"/>
+        <StayAt rdf:resource="http://travel.org/ontologies/sl_travel#Yala_Camping_Site"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NoOfPeople>
+        <TripName>Camping Trip To Yala</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Casino_Marina -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Casino_Marina">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Casino"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Casino</LocationType>
+        <PlaceName>Casino Marina</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Colombo_Dutch_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Colombo_Dutch_Museum">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Museum"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Museum</LocationType>
+        <PlaceName>Colombo Dutch Museum</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Dehiwala_Zoo -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Dehiwala_Zoo">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Zoo"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Zoo</LocationType>
+        <PlaceName>Dehiwala Zoo</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Diyatha_Uyana -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Diyatha_Uyana">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Park"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Park</LocationType>
+        <PlaceName>Diyatha Uyana</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#ExpressTrain -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#ExpressTrain">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Train"/>
+        <TravellingModeName>Express Train</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#FamilyTripToGalle -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#FamilyTripToGalle">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#FamilyTrip"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#GalleBeach"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#Old_Dutch_Hospital"/>
+        <StayAt rdf:resource="http://travel.org/ontologies/sl_travel#Jetwing_Light_House"/>
+        <TravelUsing rdf:resource="http://travel.org/ontologies/sl_travel#ExpressTrain"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</NoOfPeople>
+        <TripName>Family Trip To Galle</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#FamilyTripToKandy -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#FamilyTripToKandy">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#FamilyTrip"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#Grand_Kandian_Hotel"/>
+        <TravelUsing rdf:resource="http://travel.org/ontologies/sl_travel#IntercityTrain"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</NoOfPeople>
+        <TripName>Family Trip To Kandy</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#GalleBeach -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#GalleBeach">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Beach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#GalleRestHouse -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#GalleRestHouse">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#RestHouse"/>
+        <AccomadationName>Galle Rest House</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</DistanceFromCapital>
+        <Location>Galle</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Galle_Face_Green -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Galle_Face_Green">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Park"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Park</LocationType>
+        <PlaceName>Galle Face Green</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Gangaramaya_Buddhist_Temple -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Gangaramaya_Buddhist_Temple">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Temple</LocationType>
+        <PlaceName>Gangaramaya Buddhist Temple</PlaceName>
+        <Religion>Buddihist</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Grand_Kandian_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Grand_Kandian_Hotel">
+        <Location>Kandy</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Hilton -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Hilton">
+        <AccomadationName>Hilton</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</NoOfRooms>
+        <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#IntercityBus -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#IntercityBus">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Bus"/>
+        <TravellingModeName>Intercity Bus</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#IntercityTrain -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#IntercityTrain">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Train"/>
+        <TravellingModeName>Intercity Train</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Jami_Ul-Alfar_Mosque -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Jami_Ul-Alfar_Mosque">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Mosque</LocationType>
+        <PlaceName>Jami Ul-Alfar Mosque</PlaceName>
+        <Religion>Islam</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Jetwing_Light_House -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Jetwing_Light_House">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Hotel"/>
+        <Location>Galle</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Kandalama -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Kandalama">
+        <AccomadationName>Kandalama</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</DistanceFromCapital>
+        <Location>Dambulla</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</NoOfRooms>
+        <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#KandyRestHouse -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#KandyRestHouse">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#RestHouse"/>
+        <AccomadationName>Kandy Rest House</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</DistanceFromCapital>
+        <Location>Kandy</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Kangaroo -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Kangaroo">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Cab"/>
+        <TravellingModeName>Kangaroo Cab Service</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Kelaniya_Raja_Maha_Vihara -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Kelaniya_Raja_Maha_Vihara">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</DistanceFromCapital>
+        <Location>Kelaniya</Location>
+        <LocationType>Temple</LocationType>
+        <PlaceName>Kelaniya Raja Maha Vihara</PlaceName>
+        <Religion>Buddhist</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Kumana_Camping_Site -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Kumana_Camping_Site">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Camping"/>
+        <AccomadationName>Kumana Camping site</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</DistanceFromCapital>
+        <Location>Kumana</Location>
+        <LocationType>Camping Site</LocationType>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#MatharaBeach -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#MatharaBeach">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Beach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Mount_Lavinia_Hotel -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Mount_Lavinia_Hotel">
+        <AccomadationName>Mount Lavinia Hotel</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</DistanceFromCapital>
+        <Location>Mount Lavinia</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</NoOfRooms>
+        <Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</Rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#National_Museum_Of_Colombo -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#National_Museum_Of_Colombo">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Museum"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Museum</LocationType>
+        <PlaceName>National Museum Of Colombo</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NegomboBeach -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#NegomboBeach">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Beach"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NormalBus -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#NormalBus">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Bus"/>
+        <TravellingModeName>Normal Bus</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NormalTrain -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#NormalTrain">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Train"/>
+        <TravellingModeName>Normal Train</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#NuwaraEliyaRestHouse -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#NuwaraEliyaRestHouse">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#RestHouse"/>
+        <AccomadationName>Nuwara Eliya Rest House</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</DistanceFromCapital>
+        <Location>Nuwara Eliya</Location>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Old_Dutch_Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Old_Dutch_Hospital">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Memorial"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</DistanceFromCapital>
+        <Location>Galle</Location>
+        <LocationType>Memorial</LocationType>
+        <PlaceName>Old Dutch Hospital</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Old_Galle_Buck_Lighthouse -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Old_Galle_Buck_Lighthouse">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Memorial"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Memorial</LocationType>
+        <PlaceName>Old Galle Buck Lighthouse</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Pickme -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Pickme">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Cab"/>
+        <TravellingModeName>Pick me cab service</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#RomanticTripToGalle -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#RomanticTripToGalle">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#RomanticTrip"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#GalleBeach"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NoOfPeople>
+        <TripName>Romantic Trip To Galle</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#RomanticTripToKandy -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#RomanticTripToKandy">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#RomanticTrip"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NoOfPeople>
+        <TripName>Romantic Trip To Kandy</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Seema_Malaka -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Seema_Malaka">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Temple</LocationType>
+        <PlaceName>Seema Malaka</PlaceName>
+        <Religion>Buddihist</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#SemiLuxuryBus -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#SemiLuxuryBus">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Bus"/>
+        <TravellingModeName>Semi Luxury Bus</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#SoloTripToGalle -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#SoloTripToGalle">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#SoloTrip"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#GalleBeach"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NoOfPeople>
+        <TripName>Solo Trip To Galle</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#SoloTripToKandy -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#SoloTripToKandy">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#SoloTrip"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NoOfPeople>
+        <TripName>Solo Trip To Kandy</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#The_Independence_Square -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#The_Independence_Square">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Memorial"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Memorial</LocationType>
+        <PlaceName>The Independence Square</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Traditional_Puppet_Art_Museum -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Traditional_Puppet_Art_Museum">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Museum"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</DistanceFromCapital>
+        <Location>Dehiwela</Location>
+        <LocationType>Museum</LocationType>
+        <PlaceName>Traditional Puppet Art Museum</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TripWithFriendsToGalle -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#TripWithFriendsToGalle">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#TripWithFriends"/>
+        <DestinationAt rdf:resource="http://travel.org/ontologies/sl_travel#GalleBeach"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NoOfPeople>
+        <TripName>Trip With Friends To Galle</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#TripWithFriendsToKandy -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#TripWithFriendsToKandy">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#TripWithFriends"/>
+        <NoOfPeople rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</NoOfPeople>
+        <TripName>Trip With Friends to Kandy</TripName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Uber -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Uber">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Cab"/>
+        <TravellingModeName>Uber cab service</TravellingModeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Viharamahadevi_Park -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Viharamahadevi_Park">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Park"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Park</LocationType>
+        <PlaceName>Viharamahadevi Park</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Yala_Camping_Site -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Yala_Camping_Site">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Camping"/>
+        <AccomadationName>Yala Camping Site</AccomadationName>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</DistanceFromCapital>
+        <Location>Yala</Location>
+        <LocationType>Camping</LocationType>
+        <NoOfRooms rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</NoOfRooms>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#Bally’s_Casino -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#Bally’s_Casino">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#Casino"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Casino</LocationType>
+        <PlaceName>Bally’s Casino</PlaceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://travel.org/ontologies/sl_travel#St._Lucia’s_Cathedral -->
+
+    <owl:NamedIndividual rdf:about="http://travel.org/ontologies/sl_travel#St._Lucia’s_Cathedral">
+        <rdf:type rdf:resource="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        <DistanceFromCapital rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</DistanceFromCapital>
+        <Location>Colombo</Location>
+        <LocationType>Church</LocationType>
+        <PlaceName>St. Lucia’s Cathedral</PlaceName>
+        <Religion>Religion</Religion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Bus"/>
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Cab"/>
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Train"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Casino"/>
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Museum"/>
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#Park"/>
+            <rdf:Description rdf:about="http://travel.org/ontologies/sl_travel#ReligiousPlace"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
