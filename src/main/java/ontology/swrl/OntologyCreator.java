@@ -12,6 +12,7 @@ import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
+import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -61,13 +62,32 @@ public class OntologyCreator {
 		
 		
 		
+		// Defining Romantic Trip to Dambulla individual
+		OWLNamedIndividual tripToDambulla = createIndividual(slTravelOntology, defaultPrefixManager, ontologyManager, ":Romantic_Trip_to_Dambulla");
+		
+		OWLDataProperty tripNameProperty = slTravelDataFactory.getOWLDataProperty(":TripName", defaultPrefixManager);
+		String tripNameValue = "Romantic Trip to Dambulla";
+		ontologyManager.addAxiom(slTravelOntology, slTravelDataFactory.getOWLDataPropertyAssertionAxiom(tripNameProperty, tripToDambulla, tripNameValue));
+		
+		OWLDataProperty noOfPeopleProperty = slTravelDataFactory.getOWLDataProperty(":NoOfPeople", defaultPrefixManager);
+		String noOfPeopleValue = "2";
+		ontologyManager.addAxiom(slTravelOntology, slTravelDataFactory.getOWLDataPropertyAssertionAxiom(noOfPeopleProperty, tripToDambulla, noOfPeopleValue));
+		
+		// Assigning the class
+		OWLClass romanticTripClass = slTravelDataFactory.getOWLClass(":RomanticTrip", defaultPrefixManager);
+		ontologyManager.addAxiom(slTravelOntology, slTravelDataFactory.getOWLClassAssertionAxiom(romanticTripClass, tripToDambulla));
+		
+		
+		// Adding Sigiriya as a destination to dambulla trip
+		OWLObjectProperty destinationAtPropery = slTravelDataFactory.getOWLObjectProperty(":DestinationAt", defaultPrefixManager);
+		ontologyManager.addAxiom(slTravelOntology,slTravelDataFactory.getOWLObjectPropertyAssertionAxiom(destinationAtPropery, tripToDambulla, sigiriya));
+		
 		
 		// Saving new file
 		OWLXMLDocumentFormat ontologyFormat = new OWLXMLDocumentFormat();
 		ontologyFormat.copyPrefixesFrom(defaultPrefixManager);
 		ontologyManager.saveOntology(slTravelOntology, ontologyFormat, IRI.create(new File("ontology/sl_travel_owl_modified.owl").toURI()));
-		
-	
+			
 		
 		System.out.println("Done");
 	}

@@ -253,6 +253,9 @@
         <NamedIndividual IRI="#RomanticTripToKandy"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Romantic_Trip_to_Dambulla"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Seema_Malaka"/>
     </Declaration>
     <Declaration>
@@ -534,6 +537,10 @@
         <NamedIndividual IRI="#RomanticTripToKandy"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#RomanticTrip"/>
+        <NamedIndividual IRI="#Romantic_Trip_to_Dambulla"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#ReligiousPlace"/>
         <NamedIndividual IRI="#Seema_Malaka"/>
     </ClassAssertion>
@@ -633,6 +640,11 @@
         <ObjectProperty IRI="#DestinationAt"/>
         <NamedIndividual IRI="#RomanticTripToGalle"/>
         <NamedIndividual IRI="#GalleBeach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#DestinationAt"/>
+        <NamedIndividual IRI="#Romantic_Trip_to_Dambulla"/>
+        <NamedIndividual IRI="#Sigiriya"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#DestinationAt"/>
@@ -1283,6 +1295,16 @@
         <DataProperty IRI="#TripName"/>
         <NamedIndividual IRI="#RomanticTripToKandy"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Romantic Trip To Kandy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NoOfPeople"/>
+        <NamedIndividual IRI="#Romantic_Trip_to_Dambulla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TripName"/>
+        <NamedIndividual IRI="#Romantic_Trip_to_Dambulla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Romantic Trip to Dambulla</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DistanceFromCapital"/>
