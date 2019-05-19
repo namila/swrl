@@ -18,6 +18,8 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
+import org.swrlapi.core.IRIResolver;
+import org.swrlapi.factory.DefaultIRIResolver;
 import org.swrlapi.factory.SWRLAPIFactory;
 import org.swrlapi.parser.SWRLParseException;
 import org.swrlapi.sqwrl.SQWRLQueryEngine;
@@ -98,13 +100,28 @@ public class OntologyCreator {
 	}
 	
 	void queryOntology(String filePath) throws FileNotFoundException, OWLOntologyCreationException, SQWRLException, SWRLParseException {
+		String DOCUMENT_IRI = "http://travel.org/ontologies/sl_travel";
 		InputStream inputStream = new FileInputStream(new File(filePath));
 		OWLOntologyManager ontologyManager = OWLManager.createOWLOntologyManager();
 		OWLOntology slTravelOntology = ontologyManager.loadOntologyFromOntologyDocument(inputStream);
+		//ontologyManager.getOntologyFormat(slTravelOntology).asPrefixOWLOntologyFormat().setDefaultPrefix(DOCUMENT_IRI+ "#");
+
+		
+		//DefaultIRIResolver defaultResolver = new DefaultIRIResolver(DOCUMENT_IRI+"#");
 		SQWRLQueryEngine sqwrlQueryEngine = SWRLAPIFactory.createSQWRLQueryEngine(slTravelOntology);
 		
-		SQWRLResult result1 = sqwrlQueryEngine.runSQWRLQuery("q1","tbox:cd(?c) -> sqwrl:select(?c)");
-		System.out.println(result1);
+		// What are the memorials in Dambulla?
+		SQWRLResult result1 = sqwrlQueryEngine.runSQWRLQuery("Q1","#Memorial(?memorial) ^ #Location(?memorial, ?location) ^ swrlb:stringEqualIgnoreCase(?location, \"Dambulla\") -> sqwrl:select(?memorial)");
+		System.out.println(result1);	
+//		while(result1.next()) {
+//		  System.out.println(result1);	
+//		}
+		
+		// What are the trips which include Sigiriya?
+//		SQWRLResult result2 = sqwrlQueryEngine.runSQWRLQuery("Query2","#Trip(?trip) ^ #DestinationAt(?trip, #Sigiriya) -> sqwrl:select(?trip)");
+//		while(result2.next()) {
+//			System.out.println(result2.getValue("trip"));
+//		}
 		
 	}
 	
