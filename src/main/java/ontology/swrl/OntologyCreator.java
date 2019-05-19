@@ -110,18 +110,17 @@ public class OntologyCreator {
 		//DefaultIRIResolver defaultResolver = new DefaultIRIResolver(DOCUMENT_IRI+"#");
 		SQWRLQueryEngine sqwrlQueryEngine = SWRLAPIFactory.createSQWRLQueryEngine(slTravelOntology);
 		
-		// What are the memorials in Dambulla?
-		SQWRLResult result1 = sqwrlQueryEngine.runSQWRLQuery("Q1","#Memorial(?memorial) ^ #Location(?memorial, ?location) ^ swrlb:stringEqualIgnoreCase(?location, \"Dambulla\") -> sqwrl:select(?memorial)");
-		System.out.println(result1);	
-//		while(result1.next()) {
-//		  System.out.println(result1);	
-//		}
+		// What is the distance from capitial to Sigirya?
+		SQWRLResult result1 = sqwrlQueryEngine.runSQWRLQuery("Q1","#DistanceFromCapital(#Sigiriya, ?distance)-> sqwrl:select(?distance)");	
+		while(result1.next()) {
+		  System.out.println(result1.getValue("distance"));	
+		}
 		
 		// What are the trips which include Sigiriya?
-//		SQWRLResult result2 = sqwrlQueryEngine.runSQWRLQuery("Query2","#Trip(?trip) ^ #DestinationAt(?trip, #Sigiriya) -> sqwrl:select(?trip)");
-//		while(result2.next()) {
-//			System.out.println(result2.getValue("trip"));
-//		}
+		SQWRLResult result2 = sqwrlQueryEngine.runSQWRLQuery("Query2","#Trip(?trip) ^ #DestinationAt(?trip, #Sigiriya) -> sqwrl:select(?trip)");
+		while(result2.next()) {
+			System.out.println(result2.getValue("trip"));
+		}
 		
 	}
 	
